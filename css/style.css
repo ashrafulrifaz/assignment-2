@@ -175,7 +175,8 @@ nav .fa-youtube{
 #about .right p,
 .game-container p,
 .specs-container p,
-#career p{
+#career p,
+footer p{
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--paragraph);
@@ -226,6 +227,10 @@ nav .fa-youtube{
 }
 .game-container .box img{
 	width: 100%;
+	border-radius: 13px;
+}
+.game-container .box:hover img{
+	background-color: rgba(0, 0, 0, 0.60);
 }
 
 /* Specs */
@@ -343,13 +348,31 @@ nav .fa-youtube{
 footer{
 	background: var(--primary);
 	padding: 80px 0;
+	text-align: center;
 }
 .f-logo{
-	text-align: center;
+	width: 200px;
+	margin: auto;
 }
 .f-logo img{
 	width: 50px;
 }
 .f-logo h2{
+	color: white;
+}
+footer ul li{
+	display: inline-block;
+	margin-right: 30px;
+}
+footer ul li:last-child{
+	margin: 0;
+}
+footer li a{
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+}
+footer p{
 	color: white;
 }
