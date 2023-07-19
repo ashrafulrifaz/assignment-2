@@ -11,6 +11,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Work Sans', sans-serif;
+	list-style-type: none;
 }
 .container{
 	max-width: 1100px; 
@@ -91,7 +92,9 @@ nav .fa-youtube{
 	align-items: center;
 }
 .banner .left,
-.banner .right{
+.banner .right,
+#career .left,
+#career .right{
 	width: 50%;
 }
 .banner h3{
@@ -119,7 +122,8 @@ nav .fa-youtube{
 	color: var(--seconday);
 }
 .banner button,
-#about button{
+#about button,
+#career button{
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 600;
@@ -164,7 +168,10 @@ nav .fa-youtube{
 	font-size: 40px;
 	font-weight: 700;
 }
-#about .right p{
+#about .right p,
+.game-container p,
+.specs-container p,
+#career p{
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--paragraph);
@@ -179,9 +186,141 @@ nav .fa-youtube{
 	font-size: 24px;
 	font-weight: 600;
 	color: var(--paragraph);
-	line-height: 35px;
+	line-height: 32px;
 }
 #about h3 span{
 	font-size: 20px;
 	font-weight: 500;
+}
+
+/* Games */
+
+#games{
+	padding: 50px 0;
+	text-align: center;
+}
+#games h2,
+#specs h2{
+	font-size: 40px;
+	font-weight: 700;
+	color: var(--primary);
+}
+#games p{
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--paragraph);
+	margin: 10px 0;
+}
+.game-container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 20px;
+	margin-top: 40px;
+}
+.game-container .box{
+	text-align: left;
+}
+.game-container .box img{
+	width: 100%;
+}
+
+/* Specs */
+
+#specs{
+	padding: 30px 0;
+}
+.specs-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.specs-container .left{
+	width: 55%;
+}
+.specs-container .right{
+	width: 40%;
+}
+.specs-container img:first-child{
+	width: 70%;
+}
+.specs-container img:last-child{
+	width: 30%;
+	position: relative;
+	bottom: 130px;
+	left: 330px;
+	z-index: 111;
+}
+
+/* Career */
+
+#career{
+	padding: 80px 0;
+	background: var(--seconday) url(../images/Group\ 65.png);
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.career-container{
+	display: flex;
+	justify-content: space-between;
+}
+#career h2{
+	font-size: 33px;
+	font-weight: 700;
+	color: white;
+}
+#career p{
+	color: white;
+}
+#career ul li div{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+#career span{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+#career button{
+	color: var(--seconday);
+	background: white;
+	margin-top: 20px;
+}
+
+/* Category */
+
+#category{
+	padding: 80px 0;
+}
+.cat-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 30px;
+}
+#category .button{
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+	border-radius: 50px;
+	width: 15%;
+	padding: 4px;
+	border: 1px solid #000;
+}
+#category .button:nth-child(2){
+	width: 18%;
+}
+#category .button:nth-child(4),
+#category .button:nth-child(6),
+#category .button:nth-child(7){
+	width: 20%;
+}
+#category .button img{
+	width: 40px;
+}
+#category .button p{
+	color: var(--primary);
+	font-size: 16px;
+	font-weight: 600;
 }
