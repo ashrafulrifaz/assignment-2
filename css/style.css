@@ -9,7 +9,7 @@
 
 html,
 body{
-	width: 100%;
+	max-width: 100%;
 	overflow-x: hidden;
 }
 
@@ -621,6 +621,6 @@ footer p{
 	#category .button:nth-child(4),
 	#category .button:nth-child(6),
 	#category .button:nth-child(7){
-		width: 170px;
+		width: 140px;
 	}
 }
