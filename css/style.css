@@ -416,6 +416,14 @@ footer p{
 }
 
 
+@media screen and (max-width: 1025px) {
+	.specs-container img:last-child{
+		left: 250px;
+		bottom: 90px;
+	}
+}
+
+
 /* Tablet View */
 
 
