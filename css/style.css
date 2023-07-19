@@ -1,7 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
+:root{
+	--primary: #0B0223;
+	--seconday: #FF42A5;
+	--third: #3C354F;
+	--paragraph: #534C64;
+}
+
 *{
 	margin: 0;
 	padding: 0;
 	font-family: 'Work Sans', sans-serif;
+}
+.container{
+	max-width: 1100px; 
+	margin: 0 auto;
+}
+
+/* Menu */
+
+nav{
+	justify-content: space-between;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+	background: #fff;
+	padding: 20px 200px;
+}
+nav,
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	margin-right: 10px;
+	width: 100%;
+	height: 25px;
+}
+.logo h2{
+	font-size: 30px;
+	font-weight: 600;
+	color: var(--primary);
+}
+.logo h2 span{
+	color: var(--seconday);
+}
+nav ul li{
+	list-style-type: none;
+}
+nav li a{
+	margin-left: 15px;
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--third);
+	text-decoration: none;
+	text-transform: capitalize;
+}
+nav a:last-child{
+	display: inline-block;
+}
+nav a:last-child div{
+	background: rgba(11, 2, 35, 0.10);
+	display: flex;
+	padding: 6px 12px;
+	border-radius: 6px;
+	align-items: center;
+}
+nav .fa-brands{
+	margin-left: 10px;
+}
+nav .fa-youtube{
+	color: #F61C0D;
+}
+
+/* Banner */
+
+.banner {
+	display: flex;
+	min-height: 90vh;
+	background: url(../images/Group\ 14.png);
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding: 0 200px;
+	align-items: center;
+}
+.banner .left,
+.banner .right{
+	width: 50%;
+}
+.banner h3{
+	font-size: 35px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--primary);
+}
+.banner h2{
+	background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 70px;
+	font-weight: 800;
+}
+.banner .left div{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+.banner .left div:last-child{
+	margin-top: 30px;
+}
+.banner .left i{
+	font-size: 12px;
+	margin-right: 10px;
+	width: 15px;
+	color: var(--seconday);
+}
+.banner button{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 12px 25px;
+	border: none;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+.banner button:first-child{
+	background: var(--seconday);
+	margin-right: 15px;
+}
+.banner button:last-child{
+	background: #4EC5F7;
+}
+.banner .right img{
+	width: 100%;
+}
+
+/* About */
+
+#about{
+	padding: 50px 0;
+	background: #FFF9FC;
+}
+.about-container{
+	display: flex;
+	justify-content: space-between;
+}
+#about .left{
+	width: 56%;
+}
+#about .left img{
+	width: 100%;
+}
+#about .right{
+	width: 40%;
 }
