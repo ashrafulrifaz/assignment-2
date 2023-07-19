@@ -16,6 +16,12 @@
 	max-width: 1100px; 
 	margin: 0 auto;
 }
+.linear{
+	background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 /* Menu */
 
@@ -71,6 +77,7 @@ nav .fa-youtube{
 	color: #F61C0D;
 }
 
+
 /* Banner */
 
 .banner {
@@ -94,10 +101,6 @@ nav .fa-youtube{
 	color: var(--primary);
 }
 .banner h2{
-	background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	font-size: 70px;
 	font-weight: 800;
 }
@@ -115,7 +118,8 @@ nav .fa-youtube{
 	width: 15px;
 	color: var(--seconday);
 }
-.banner button{
+.banner button,
+#about button{
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 600;
@@ -144,6 +148,7 @@ nav .fa-youtube{
 .about-container{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 #about .left{
 	width: 56%;
@@ -153,4 +158,30 @@ nav .fa-youtube{
 }
 #about .right{
 	width: 40%;
+	text-align: right;
+}
+#about .right h2{
+	font-size: 40px;
+	font-weight: 700;
+}
+#about .right p{
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--paragraph);
+	margin: 20px 0;
+	line-height: 23px;
+}
+#about button{
+	background: var(--seconday);
+	margin-bottom: 20px;
+}
+#about h3{
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--paragraph);
+	line-height: 35px;
+}
+#about h3 span{
+	font-size: 20px;
+	font-weight: 500;
 }
