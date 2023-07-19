@@ -14,7 +14,7 @@
 	list-style-type: none;
 }
 .container{
-	max-width: 1100px; 
+	max-width: 80%; 
 	margin: 0 auto;
 }
 .linear{
@@ -33,21 +33,25 @@ nav{
 	padding: 20px 200px;
 }
 nav,
-.logo{
+.logo,
+.f-logo{
 	display: flex;
 	align-items: center;
 }
-.logo img{
+.logo img,
+.f-logo img{
 	margin-right: 10px;
 	width: 100%;
 	height: 25px;
 }
-.logo h2{
+.logo h2,
+.f-logo h2{
 	font-size: 30px;
 	font-weight: 600;
 	color: var(--primary);
 }
-.logo h2 span{
+.logo h2 span,
+.f-logo h2 span{
 	color: var(--seconday);
 }
 nav ul li{
@@ -297,30 +301,55 @@ nav .fa-youtube{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	gap: 30px;
+	row-gap: 40px;
+	column-gap: 20px;
 }
 #category .button{
 	display: flex;
 	column-gap: 10px;
 	align-items: center;
 	border-radius: 50px;
-	width: 15%;
-	padding: 4px;
-	border: 1px solid #000;
+	width: 170px;
+	padding: 5px;
+	border: 1px solid transparent;
+	transition: border 0.2s, color 0.2s;
 }
 #category .button:nth-child(2){
-	width: 18%;
+	width: 190px;
 }
 #category .button:nth-child(4),
 #category .button:nth-child(6),
 #category .button:nth-child(7){
-	width: 20%;
+	width: 210px;
 }
 #category .button img{
 	width: 40px;
 }
 #category .button p{
 	color: var(--primary);
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 600;
+	transition: border 0.2s;
+}
+#category .button:hover p{
+	color: var(--seconday);
+}
+#category .button:hover{
+	border: 1px solid var(--seconday);
+}
+
+/* Footer */
+
+footer{
+	background: var(--primary);
+	padding: 80px 0;
+}
+.f-logo{
+	text-align: center;
+}
+.f-logo img{
+	width: 50px;
+}
+.f-logo h2{
+	color: white;
 }
